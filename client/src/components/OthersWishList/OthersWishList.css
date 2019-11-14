@@ -1,0 +1,41 @@
+.container-friendswishlist {
+  height: 100vh;
+}
+
+.title-friendswishlist {
+  font-size: 4vh;
+  margin-left: 2vh;
+  margin-top: 15vh; 
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.table-friendswishlist {  
+  padding: 3vh;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0px 3px 5px 2px #A0B1B9;
+  background-color: white;
+}
+
+.footer-friendswishlist {
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #87a5d4;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.btn-back-friendswishlist {
+  background: #4382E3;
+  border: 0px;
+  color: white;
+  height: 7vh;
+  width: 7vh;
+  margin: 10px;
+}
