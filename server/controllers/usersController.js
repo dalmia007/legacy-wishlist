@@ -6,8 +6,8 @@ const db = require('../models/index');
 const getUsers = async (req, res) => {
   try {
     const users = await db.users.findAll();
+    res.status(200);
     res.json(users);
-    res.status(201);
   }
   catch (err) {
     res.sendStatus(500);
@@ -24,7 +24,7 @@ const createUser = async (req, res) => {
     res.status(201);
   }
   catch (err) {
-    res.sendStatus(500);
+    res.status(500);
   }
 };
 
@@ -33,7 +33,7 @@ const deleteUser = async (req, res) => {
     const user = await db.users.findOne({where: {id: req.params.id}})
     await user.destroy();
     res.json(user);
-    res.status(201);
+    res.status(204);
   }
   catch (err) {
     res.sendStatus(500);
