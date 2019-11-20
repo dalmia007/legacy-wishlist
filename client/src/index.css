@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: #A0B1B9;
+  background: rgb(255, 255, 255);
 }
 
 * {
@@ -9,4 +9,5 @@ body {
 
 #root {
   height: 100vh;
+  
 }
