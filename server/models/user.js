@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     picture: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
   });
   user.associate = db => {
     db.users.hasMany(db.wishes)

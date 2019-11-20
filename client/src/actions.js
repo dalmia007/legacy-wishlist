@@ -4,6 +4,7 @@ export const addWish = (wish) => {
     wish
   };
 };
+
 export const setWishes = (wishList) => {
   return {
     type: 'SET_WISHES',
